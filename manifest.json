@@ -1,0 +1,13 @@
+{
+  "name": "Enforce Facebook sort order 'MOST RECENT'",
+  "version": "1.0.3",
+  "manifest_version": 2,
+  "description": "Somehow Facebook sometimes looses the sort order for the Newsfeed. This extension helps you keep your sort order set.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/"],
+      "js": ["jquery.js", "myscript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
